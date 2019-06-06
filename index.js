@@ -13,8 +13,8 @@
 
 $('.shopping-item-toggle').click(event => {
   event.preventDefault();
-  $('.shopping-item').closest('span').toggleClass('shopping-item__checked');
+  console.log(event.currentTarget);
+  $(event.currentTarget).closest('li').find('.shopping-item').toggleClass('shopping-item__checked');
+
 }
 );
-
-if
