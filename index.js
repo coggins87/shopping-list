@@ -33,7 +33,7 @@ $('#js-shopping-list-form').submit(event => {
   const testEntry = newEntry.val();
   console.log(newEntry);
   //adding user text to the list 
-  $('ul').html( `    
+  $('ul').append( `    
   <li>
   <span class="shopping-item">${testEntry}</span>
   <div class="shopping-item-controls">
